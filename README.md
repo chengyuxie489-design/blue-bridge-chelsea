@@ -2,6 +2,10 @@
 
 An unofficial Chelsea supporters homepage built as a static, magazine-style fan site.
 
+## Live Site
+
+https://chengyuxie489-design.github.io/
+
 ## Features
 
 - Art-led Chelsea homepage hero using a local visual asset
