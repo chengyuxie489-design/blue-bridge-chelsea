@@ -65,7 +65,9 @@ a {
   gap: 24px;
   padding: 16px clamp(18px, 4vw, 60px);
   color: var(--white);
-  background: linear-gradient(180deg, rgba(1, 9, 36, 0.92), rgba(1, 9, 36, 0.2) 76%, rgba(1, 9, 36, 0));
+  background: rgba(1, 9, 36, 0.78);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
 }
 
 .brand {
