@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260523-3" />
+    <link rel="stylesheet" href="styles.css?v=20260523-4" />
   </head>
   <body>
     <header class="site-header" aria-label="Main Navigation">
@@ -70,9 +70,17 @@
         <aside class="match-card" aria-label="Next Match">
           <span class="card-label">Official Next Match</span>
           <div class="teams">
-            <span>SUN</span>
+            <span class="team-side">
+              <img src="https://clublogos.stadion.io/assets/ClubLogos/Football/English/722.png" alt="Sunderland AFC crest" />
+              <b>SUN</b>
+              <small>Sunderland</small>
+            </span>
             <strong>VS</strong>
-            <span>CHE</span>
+            <span class="team-side">
+              <img src="assets/chelsea-logo-round.png" alt="Chelsea FC crest" />
+              <b>CHE</b>
+              <small>Chelsea</small>
+            </span>
           </div>
           <p>Sun, 24 May 2026 - 16:00 UK - Stadium of Light</p>
           <p class="time-note">Beijing time: 23:00</p>
@@ -325,43 +333,57 @@
           <h2>Chelsea Honours</h2>
         </div>
         <div class="honours-grid">
-          <article class="honour-card is-europe">
-            <div class="trophy-mark trophy-ucl" aria-hidden="true"><i></i></div>
+          <article class="honour-card">
+            <figure class="trophy-photo">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_-_Champions_League.png" alt="UEFA Champions League trophy" />
+            </figure>
             <span>European Crown</span>
             <strong>2</strong>
             <h3>UEFA Champions League</h3>
             <p>2012, 2021</p>
           </article>
           <article class="honour-card">
-            <div class="trophy-mark trophy-league" aria-hidden="true"><i></i></div>
+            <figure class="trophy-photo">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/PremierLeague.png" alt="Premier League trophy" />
+            </figure>
             <span>Domestic League</span>
             <strong>6</strong>
             <h3>First Division / Premier League</h3>
             <p>1955, 2005, 2006, 2010, 2015, 2017</p>
           </article>
           <article class="honour-card">
-            <div class="trophy-mark trophy-fa" aria-hidden="true"><i></i></div>
+            <figure class="trophy-photo">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/FA_Cup_Trophy_at_Manchester_National_Football_Museum_(Ank_Kumar)_01.jpg" alt="FA Cup trophy" />
+            </figure>
             <span>Knockout Heritage</span>
             <strong>8</strong>
             <h3>FA Cup</h3>
             <p>1970, 1997, 2000, 2007, 2009, 2010, 2012, 2018</p>
           </article>
           <article class="honour-card">
-            <div class="trophy-mark trophy-world" aria-hidden="true"><i></i></div>
+            <figure class="trophy-photo trophy-photo-wide">
+              <img src="https://img.chelseafc.com/image/upload/f_auto,q_auto,c_fill,w_700,h_700/v1752444520/editorial/match-reports/2025-26/PSG%20CWC%20final/Chelsea_win_the_FIFA_Club_World_Cup.jpg" alt="Chelsea lifting the FIFA Club World Cup trophy" />
+            </figure>
             <span>Global Stage</span>
             <strong>2</strong>
             <h3>World Titles</h3>
             <p>FIFA Club World Cup 2025, FIFA Intercontinental Cup 2021</p>
           </article>
           <article class="honour-card">
-            <div class="trophy-mark trophy-uefa" aria-hidden="true"><i></i></div>
+            <figure class="trophy-photo-stack">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_-_Champions_League.png" alt="UEFA Champions League trophy" />
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uefa_cup.svg" alt="UEFA Europa League trophy" />
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_Europa_Conference_League_Trophy.jpg" alt="UEFA Conference League trophy" />
+            </figure>
             <span>UEFA Set</span>
             <strong>All 4</strong>
             <h3>Main UEFA Competitions</h3>
             <p>Champions League, Europa League, Cup Winners' Cup, Conference League</p>
           </article>
           <article class="honour-card">
-            <div class="trophy-mark trophy-cup" aria-hidden="true"><i></i></div>
+            <figure class="trophy-photo">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/League_Cup_Trophy.png" alt="League Cup trophy" />
+            </figure>
             <span>Cup Runs</span>
             <strong>5</strong>
             <h3>League Cup</h3>
@@ -435,6 +457,14 @@
             <a href="https://www.chelseafc.com/en/news/article/match-report-chelsea-2-1-tottenham-25-26" target="_blank" rel="noreferrer">Chelsea FC Tottenham match report</a>.
           </li>
           <li>
+            Trophy imagery:
+            <a href="https://commons.wikimedia.org/wiki/Category:UEFA_Champions_League_trophy_icons" target="_blank" rel="noreferrer">Wikimedia Commons UEFA Champions League trophy icons</a>,
+            <a href="https://commons.wikimedia.org/wiki/Category:FA_Premier_League_trophy_icons" target="_blank" rel="noreferrer">Premier League trophy icons</a>,
+            <a href="https://commons.wikimedia.org/wiki/Category:FA_Cup" target="_blank" rel="noreferrer">FA Cup media</a>,
+            and
+            <a href="https://commons.wikimedia.org/wiki/File:League_Cup_Trophy.png" target="_blank" rel="noreferrer">League Cup trophy file</a>.
+          </li>
+          <li>
             Men's trophy records:
             <a href="https://www.chelseafc.com/en/mens-trophy-cabinet-asia" target="_blank" rel="noreferrer">Chelsea FC Men's trophy cabinet</a>.
           </li>
@@ -451,6 +481,6 @@
       <p>Unofficial Chelsea fan homepage | Not affiliated with Chelsea Football Club</p>
     </footer>
 
-    <script src="script.js?v=20260523-3"></script>
+    <script src="script.js?v=20260523-4"></script>
   </body>
 </html>
