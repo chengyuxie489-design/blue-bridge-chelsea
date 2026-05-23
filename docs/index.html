@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blue Bridge is an unofficial Chelsea supporters homepage with match intelligence, club news, squad numbers and a premium blue visual identity."
+    />
+    <meta name="theme-color" content="#034694" />
+    <meta property="og:title" content="Blue Bridge | Chelsea Supporters" />
+    <meta
+      property="og:description"
+      content="An unofficial Chelsea supporters homepage with verified matchday information, club news and 2025/26 squad numbers."
+    />
+    <meta property="og:image" content="assets/chelsea-fan-hero.png" />
+    <meta property="og:type" content="website" />
+    <title>Blue Bridge | Chelsea Supporters</title>
+    <link rel="icon" href="assets/chelsea-logo-round.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Blue Bridge 首页">
+        <img class="club-logo" src="assets/chelsea-logo-round.png" alt="Chelsea FC logo" />
+        <span>
+          <strong>Blue Bridge</strong>
+          <small>Unofficial Chelsea Journal</small>
+        </span>
+      </a>
+      <nav>
+        <a href="#matchday">比赛</a>
+        <a href="#news">资讯</a>
+        <a href="#squad">大名单</a>
+        <a href="#identity">俱乐部</a>
+        <a href="#sources">来源</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-media" src="assets/chelsea-fan-hero.png" alt="切尔西球员主题的蓝色主视觉海报" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <img src="assets/chelsea-logo-round.png" alt="" />
+            <span>Data checked · 23 May 2026</span>
+          </div>
+          <p class="eyebrow">Pride of London</p>
+          <h1 id="hero-title">Blue Is The Colour</h1>
+          <p class="hero-copy">
+            以切尔西官方最新赛程、新闻与 2025/26 球队号码为基础，做成一张带有球迷情绪和数字杂志质感的蓝军首页。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#matchday">查看比赛情报</a>
+            <a class="button ghost" href="#squad">浏览球队大名单</a>
+          </div>
+        </div>
+
+        <aside class="match-card" aria-label="下一场比赛">
+          <span class="card-label">Official Next Match</span>
+          <div class="teams">
+            <span>SUN</span>
+            <strong>VS</strong>
+            <span>CHE</span>
+          </div>
+          <p>2026-05-24 · 16:00 英国时间 · Stadium of Light</p>
+          <p class="time-note">北京时间 5月24日 23:00</p>
+          <div class="form-strip" aria-label="切尔西最近五场英超战绩">
+            <span>W</span><span>W</span><span>L</span><span>D</span><span>W</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="ticker" aria-label="最新公告">
+        <span>Blue News</span>
+        <p>最新官方资讯：周日客战 Sunderland · Cobham 备战训练图集更新 · Hato 近期表现获 McFarlane 称赞</p>
+      </section>
+
+      <section id="matchday" class="section matchday">
+        <div class="section-heading">
+          <p class="eyebrow">Match Intelligence</p>
+          <h2>比赛情报室</h2>
+        </div>
+        <div class="insight-grid">
+          <article class="feature-panel">
+            <span class="card-label">Next Fixture</span>
+            <h3>Sunderland v Chelsea</h3>
+            <p>官方预告显示，切尔西将在 2026 年 5 月 24 日英超收官战客场对阵 Sunderland，开球时间为英国时间 16:00。</p>
+            <dl>
+              <div><dt>日期</dt><dd>5月24日</dd></div>
+              <div><dt>时间</dt><dd>23:00 北京</dd></div>
+              <div><dt>场地</dt><dd>Stadium of Light</dd></div>
+            </dl>
+          </article>
+          <article class="score-panel" aria-label="最近赛果">
+            <span class="card-label">Latest Result</span>
+            <div class="scoreline"><span>2</span><strong>-</strong><span>1</span></div>
+            <p>Chelsea 击败 Tottenham Hotspur</p>
+            <button id="boostVote" type="button">为蓝军加票</button>
+            <small id="voteCount">4,821 位球迷已支持</small>
+          </article>
+          <article class="intel-panel">
+            <span class="card-label">Team Notes</span>
+            <h3>Final Day Focus</h3>
+            <ul>
+              <li>Levi Colwill 与 Joao Pedro 有望回到竞争名单。</li>
+              <li>Reece James 在对 Spurs 轮休后状态无碍。</li>
+              <li>Hato 在近期防守表现中持续得到肯定。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="news" class="section newsroom">
+        <div class="section-heading">
+          <p class="eyebrow">Club Newsroom</p>
+          <h2>球队新闻资讯</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card is-large">
+            <span>3 hours ago · Men's Team</span>
+            <h3>Training gallery: Preparing for the final day!</h3>
+            <p>球队在 Cobham 继续备战收官战，官方图集记录了周日客战 Sunderland 前的训练状态。</p>
+            <a href="https://www.chelseafc.com/en/news/article/training-gallery-preparing-for-the-final-day" target="_blank" rel="noreferrer">阅读官方资讯</a>
+          </article>
+          <article class="news-card">
+            <span>2 hours ago · Premier League</span>
+            <h3>McFarlane praises Jorrel Hato</h3>
+            <p>Calum McFarlane 称赞 Hato 的成长和韧性，并强调收官战仍需争取三分。</p>
+            <a href="https://www.chelseafc.com/en/news/article/mcfarlane-on-exceptional-hato-and-showing-resilience" target="_blank" rel="noreferrer">阅读官方资讯</a>
+          </article>
+          <article class="news-card">
+            <span>Preview · Matchday</span>
+            <h3>Sunderland vs Chelsea: how to watch</h3>
+            <p>官网预告整理了转播、直播、比赛中心和赛后回放信息。</p>
+            <a href="https://www.chelseafc.com/en/news/article/sunderland-vs-chelsea-preview-tv-channel-kick-off-time-and-how-to-watch" target="_blank" rel="noreferrer">阅读官方资讯</a>
+          </article>
+          <article class="news-card">
+            <span>Latest result</span>
+            <h3>Match report: Chelsea 2-1 Tottenham</h3>
+            <p>Enzo Fernandez 传射建功，Andrey Santos 破门，蓝军在伦敦德比中拿到胜利。</p>
+            <a href="https://www.chelseafc.com/en/news/article/match-report-chelsea-2-1-tottenham-25-26" target="_blank" rel="noreferrer">阅读官方战报</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="squad" class="section squad">
+        <div class="section-heading">
+          <p class="eyebrow">2025/26 Squad Numbers</p>
+          <h2>球队大名单</h2>
+        </div>
+        <div class="squad-toolbar" aria-label="按位置筛选球员">
+          <button class="filter is-active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="GK">门将</button>
+          <button class="filter" type="button" data-filter="DF">后卫</button>
+          <button class="filter" type="button" data-filter="MF">中场</button>
+          <button class="filter" type="button" data-filter="FW">前锋</button>
+        </div>
+        <div class="squad-grid" id="squadGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section tactical">
+        <div class="section-heading">
+          <p class="eyebrow">Tactical Notes</p>
+          <h2>蓝军观察</h2>
+        </div>
+        <div class="tactical-grid">
+          <article>
+            <span>01</span>
+            <h3>中场重心</h3>
+            <p>Enzo Fernandez、Moises Caicedo 与 Andrey Santos 让球队具备传控、覆盖和后插上的多重层次。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>边路推进</h3>
+            <p>Pedro Neto、Malo Gusto、Reece James 与 Marc Cucurella 让两翼既能纵向冲击，也能回收成稳定防线。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>年轻蓝图</h3>
+            <p>Hato、Acheampong、Estevao、Gittens 等年轻球员让球队保持高上限和持续更新的阵容结构。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chants" class="section chants">
+        <div class="section-heading">
+          <p class="eyebrow">From The Stands</p>
+          <h2>看台歌声</h2>
+        </div>
+        <div class="chant-board">
+          <button class="chant is-active" type="button" data-chant="Carefree, wherever we may be.">Carefree</button>
+          <button class="chant" type="button" data-chant="Blue is the colour, football is the game.">Blue Is The Colour</button>
+          <button class="chant" type="button" data-chant="Keep the blue flag flying high.">Blue Flag</button>
+        </div>
+        <p id="chantLine" class="chant-line">Carefree, wherever we may be.</p>
+      </section>
+
+      <section id="identity" class="section identity">
+        <div>
+          <p class="eyebrow">Club Identity</p>
+          <h2>皇家蓝的城市气质</h2>
+        </div>
+        <div class="identity-grid">
+          <article><strong>1905</strong><span>Founded</span></article>
+          <article><strong>Stamford Bridge</strong><span>Home</span></article>
+          <article><strong>Royal Blue</strong><span>Primary colour</span></article>
+          <article><strong>London</strong><span>Pride of the capital</span></article>
+        </div>
+      </section>
+
+      <section id="sources" class="section sources">
+        <div>
+          <p class="eyebrow">Verified Sources</p>
+          <h2>信息来源</h2>
+        </div>
+        <ul>
+          <li>
+            赛程、预告和新闻来自
+            <a href="https://www.chelseafc.com/en" target="_blank" rel="noreferrer">Chelsea FC 官网</a>。
+          </li>
+          <li>
+            阵容号码来自
+            <a
+              href="https://www.chelseafc.com/en/news/article/chelsea-squad-numbers-confirmed-for-2025-26-season"
+              target="_blank"
+              rel="noreferrer"
+              >Chelsea FC 2025/26 squad numbers</a
+            >。
+          </li>
+          <li>
+            彩色俱乐部徽章文件来自
+            <a href="https://commons.wikimedia.org/wiki/File:ChelseaFC.png" target="_blank" rel="noreferrer">Wikimedia Commons</a>。
+          </li>
+          <li>本页信息最后核对时间：2026-05-23，亚洲区时间。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Unofficial Chelsea fan homepage · Not affiliated with Chelsea Football Club</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
