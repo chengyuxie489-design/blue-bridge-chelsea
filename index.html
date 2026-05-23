@@ -39,6 +39,8 @@
         <a href="#news">News</a>
         <a href="#squad">Squad</a>
         <a href="#data">Data</a>
+        <a href="#stats">Stats</a>
+        <a href="#highlights">Highlights</a>
         <a href="#honours">Honours</a>
         <a href="#identity">Club</a>
       </nav>
@@ -170,7 +172,7 @@
             <p class="eyebrow">Transfermarkt Squad Values</p>
             <h2>First-Team Squad Board</h2>
           </div>
-          <p class="section-note">Portraits and market values are aligned to Transfermarkt squad data checked on 23 May 2026.</p>
+          <p class="section-note">Official 2025/26 Chelsea profile portraits are paired with Transfermarkt market values checked on 23 May 2026.</p>
         </div>
         <div class="squad-toolbar" aria-label="Filter Players By Position">
           <button class="filter is-active" type="button" data-filter="all">All</button>
@@ -221,6 +223,78 @@
         </div>
       </section>
 
+      <section id="stats" class="section player-stats">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Player Statistics</p>
+            <h2>Season Leaders</h2>
+          </div>
+          <p class="section-note">Premier League player leaderboards compiled from FootyStats data checked on 23 May 2026.</p>
+        </div>
+        <div class="stats-hero">
+          <div>
+            <span>Current League Snapshot</span>
+            <strong>35</strong>
+            <p>Enzo Fernandez leads Chelsea for Premier League appearances.</p>
+          </div>
+          <div>
+            <span>Top Scorer</span>
+            <strong>15</strong>
+            <p>Joao Pedro leads the league goal chart for Chelsea.</p>
+          </div>
+          <div>
+            <span>Assist Leaders</span>
+            <strong>5</strong>
+            <p>Joao Pedro, Pedro Neto and Reece James share the top assist mark.</p>
+          </div>
+        </div>
+        <div class="player-stats-grid" id="playerStatsGrid" aria-live="polite"></div>
+      </section>
+
+      <section id="highlights" class="section highlight-wall">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Season Highlight Wall</p>
+            <h2>Moments In Blue</h2>
+          </div>
+          <p class="section-note">A cinematic wall of official 2025/26 Chelsea imagery, tuned to feel like a gallery rather than a news feed.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card is-wide">
+            <img src="https://img.chelseafc.com/image/upload/f_auto,q_auto,c_fill,w_1200,h_760/v1752444520/editorial/match-reports/2025-26/PSG%20CWC%20final/Chelsea_win_the_FIFA_Club_World_Cup.jpg" alt="Chelsea players celebrate winning the Club World Cup" />
+            <div>
+              <span>World Stage</span>
+              <h3>Club World Cup crowned in blue</h3>
+              <p>MetLife became a Chelsea night as the Blues lifted the world title after a ruthless final performance.</p>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="https://img.chelseafc.com/image/upload/f_auto,q_auto,c_fill,w_900,h_720/v1779220577/editorial/match-reports/2025-26/Spurs%20home/GettyImages-2277156154.jpg" alt="Chelsea versus Tottenham match action" />
+            <div>
+              <span>London Derby</span>
+              <h3>Fernandez ignites the Bridge</h3>
+              <p>A late-season derby win kept Stamford Bridge loud and gave the campaign a sharp home finale.</p>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="https://img.chelseafc.com/image/upload/f_auto,q_auto,c_fill,w_900,h_720/v1752747278/editorial/news/2025/07/17/caicedo-neto-benfica.jpg" alt="Moises Caicedo and Pedro Neto in Club World Cup action" />
+            <div>
+              <span>Control</span>
+              <h3>Caicedo and Neto set the tempo</h3>
+              <p>Ball-winning and direct running gave Chelsea's summer silverware run its rhythm.</p>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="https://img.chelseafc.com/image/upload/f_auto,q_auto,c_fill,w_900,h_720/v1752684544/editorial/news/2025/07/16/palmer-maresca-cwc-final.jpg" alt="Cole Palmer and Enzo Maresca after the Club World Cup final" />
+            <div>
+              <span>Icon Frame</span>
+              <h3>Palmer's defining stage</h3>
+              <p>The No.10 carried the spotlight with the calm of a player built for big nights.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section tactical">
         <div class="section-heading">
           <p class="eyebrow">Tactical Notes</p>
@@ -252,36 +326,42 @@
         </div>
         <div class="honours-grid">
           <article class="honour-card is-europe">
+            <div class="trophy-mark trophy-ucl" aria-hidden="true"><i></i></div>
             <span>European Crown</span>
             <strong>2</strong>
             <h3>UEFA Champions League</h3>
             <p>2012, 2021</p>
           </article>
           <article class="honour-card">
+            <div class="trophy-mark trophy-league" aria-hidden="true"><i></i></div>
             <span>Domestic League</span>
             <strong>6</strong>
             <h3>First Division / Premier League</h3>
             <p>1955, 2005, 2006, 2010, 2015, 2017</p>
           </article>
           <article class="honour-card">
+            <div class="trophy-mark trophy-fa" aria-hidden="true"><i></i></div>
             <span>Knockout Heritage</span>
             <strong>8</strong>
             <h3>FA Cup</h3>
             <p>1970, 1997, 2000, 2007, 2009, 2010, 2012, 2018</p>
           </article>
           <article class="honour-card">
+            <div class="trophy-mark trophy-world" aria-hidden="true"><i></i></div>
             <span>Global Stage</span>
             <strong>2</strong>
             <h3>World Titles</h3>
             <p>FIFA Club World Cup 2025, FIFA Intercontinental Cup 2021</p>
           </article>
           <article class="honour-card">
+            <div class="trophy-mark trophy-uefa" aria-hidden="true"><i></i></div>
             <span>UEFA Set</span>
             <strong>All 4</strong>
             <h3>Main UEFA Competitions</h3>
             <p>Champions League, Europa League, Cup Winners' Cup, Conference League</p>
           </article>
           <article class="honour-card">
+            <div class="trophy-mark trophy-cup" aria-hidden="true"><i></i></div>
             <span>Cup Runs</span>
             <strong>5</strong>
             <h3>League Cup</h3>
@@ -339,6 +419,20 @@
           <li>
             Squad portraits and market values:
             <a href="https://www.transfermarkt.com/fc-chelsea/kader/verein/631/sort/marketValueRaw" target="_blank" rel="noreferrer">Transfermarkt Chelsea squad</a>.
+          </li>
+          <li>
+            Official 2025/26 profile portraits:
+            <a href="https://www.chelseafc.com/en/teams/men" target="_blank" rel="noreferrer">Chelsea FC men's team profiles</a>.
+          </li>
+          <li>
+            Premier League player leaders:
+            <a href="https://footystats.org/clubs/chelsea-fc-152" target="_blank" rel="noreferrer">FootyStats Chelsea player stats</a>.
+          </li>
+          <li>
+            Highlight wall imagery:
+            <a href="https://www.chelseafc.com/en/news/article/in-pictures-outstanding-blues-win-the-club-world-cup" target="_blank" rel="noreferrer">Chelsea FC Club World Cup picture gallery</a>
+            and
+            <a href="https://www.chelseafc.com/en/news/article/match-report-chelsea-2-1-tottenham-25-26" target="_blank" rel="noreferrer">Chelsea FC Tottenham match report</a>.
           </li>
           <li>
             Men's trophy records:
