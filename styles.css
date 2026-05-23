@@ -266,6 +266,12 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.history-copy {
+  max-width: 680px;
+  font-size: clamp(1rem, 1.45vw, 1.12rem);
+  letter-spacing: 0;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -402,6 +408,15 @@ h3 {
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 32px;
+}
+
+.section-note {
+  max-width: 460px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.6;
 }
 
 .insight-grid {
@@ -631,34 +646,86 @@ dd {
 
 .squad-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .squad-card {
-  min-height: 132px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 16px;
-  align-items: end;
-  padding: 18px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
   color: var(--white);
-  background: rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 27, 95, 0.34)),
+    rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: none;
+}
+
+.player-portrait {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 28%, rgba(255, 255, 255, 0.18), transparent 34%),
+    linear-gradient(145deg, rgba(0, 103, 216, 0.28), rgba(1, 9, 36, 0.1));
+}
+
+.player-portrait::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(214, 174, 67, 0.84), transparent);
+}
+
+.player-portrait img {
+  position: relative;
+  z-index: 1;
+  width: min(74%, 220px);
+  max-height: 236px;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 24px 24px rgba(0, 0, 0, 0.3));
+}
+
+.player-card-body {
+  padding: 18px;
+}
+
+.squad-card-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .squad-number {
   color: var(--gold);
   font-family: "Barlow Condensed", Manrope, sans-serif;
-  font-size: 3.7rem;
+  font-size: 4.2rem;
   font-weight: 900;
   line-height: 0.82;
 }
 
+.market-value {
+  color: var(--bridge-blue);
+  padding: 7px 10px;
+  font-size: 0.86rem;
+  font-weight: 900;
+  background: var(--gold);
+  border-radius: 999px;
+}
+
 .squad-card h3 {
   color: var(--white);
-  font-size: 1.45rem;
+  font-size: 1.58rem;
   line-height: 1;
 }
 
@@ -667,6 +734,131 @@ dd {
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.84rem;
   font-weight: 900;
+}
+
+.squad-card small {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.54);
+  font-weight: 900;
+}
+
+.data-lab {
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(1, 9, 36, 0.98), rgba(0, 50, 140, 0.95)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 112px);
+}
+
+.data-lab h2 {
+  color: var(--white);
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.7fr 0.7fr 1fr;
+  gap: 16px;
+}
+
+.data-card {
+  min-height: 220px;
+  padding: 24px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.data-card span {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.data-card strong {
+  display: block;
+  font-family: "Barlow Condensed", Manrope, sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.86;
+}
+
+.data-card p {
+  max-width: 420px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 800;
+  line-height: 1.58;
+}
+
+.hero-data {
+  grid-row: span 2;
+  min-height: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(180deg, rgba(1, 9, 36, 0.18), rgba(1, 9, 36, 0.92)),
+    url("assets/chelsea-fan-hero.png") center / cover;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.leaderboard b,
+.leaderboard em {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.position-values {
+  grid-column: span 2;
+}
+
+.value-row {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+  font-weight: 900;
+}
+
+.value-row i {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.value-row i::before {
+  content: "";
+  display: block;
+  width: var(--w);
+  height: 100%;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}
+
+.value-row em {
+  color: rgba(255, 255, 255, 0.72);
+  font-style: normal;
 }
 
 .tactical {
@@ -694,6 +886,66 @@ dd {
   font-size: 4rem;
   font-weight: 900;
   line-height: 0.8;
+}
+
+.honours {
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(1, 9, 36, 0.96), rgba(3, 70, 148, 0.92)),
+    radial-gradient(circle at 12% 24%, rgba(214, 174, 67, 0.22), transparent 28%);
+}
+
+.honours h2 {
+  color: var(--white);
+}
+
+.honours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.honour-card {
+  min-height: 268px;
+  padding: 26px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.honour-card.is-europe {
+  background:
+    linear-gradient(180deg, rgba(1, 9, 36, 0.14), rgba(1, 9, 36, 0.88)),
+    url("assets/chelsea-fan-hero.png") center / cover;
+}
+
+.honour-card span {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.honour-card strong {
+  display: block;
+  margin: 34px 0 18px;
+  color: var(--gold);
+  font-family: "Barlow Condensed", Manrope, sans-serif;
+  font-size: clamp(4.8rem, 8vw, 7rem);
+  font-weight: 900;
+  line-height: 0.72;
+}
+
+.honour-card h3 {
+  color: var(--white);
+  font-size: 2.2rem;
+}
+
+.honour-card p {
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 800;
+  line-height: 1.55;
 }
 
 .chants {
@@ -730,17 +982,40 @@ dd {
 
 .identity {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 30px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.9fr);
+  gap: clamp(30px, 6vw, 82px);
+  align-items: start;
   color: var(--white);
   background:
     linear-gradient(115deg, rgba(1, 9, 36, 0.95), rgba(3, 70, 148, 0.92)),
     url("assets/chelsea-fan-hero.png") center / cover;
 }
 
+.identity-copy {
+  max-width: 820px;
+}
+
 .identity h2 {
+  max-width: 760px;
   color: var(--white);
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  line-height: 1.08;
+}
+
+.identity-lead {
+  margin: 34px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(1.15rem, 2.1vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.84;
+}
+
+.identity-text {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 700;
+  line-height: 1.9;
 }
 
 .identity-grid {
@@ -818,7 +1093,9 @@ footer p {
 @media (max-width: 1120px) {
   .insight-grid,
   .news-grid,
+  .data-grid,
   .tactical-grid,
+  .honours-grid,
   .identity,
   .sources {
     grid-template-columns: 1fr;
@@ -829,7 +1106,14 @@ footer p {
   }
 
   .squad-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-data,
+  .position-values {
+    grid-row: auto;
+    grid-column: auto;
+    min-height: 260px;
   }
 
   .match-card {
@@ -913,7 +1197,21 @@ footer p {
   }
 
   .squad-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .squad-card {
+    min-height: 330px;
+  }
+
+  .data-card,
+  .honour-card {
+    min-height: 220px;
+  }
+
+  .value-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
@@ -961,11 +1259,15 @@ footer p {
     font-size: 0.72rem;
   }
 
-  .squad-grid {
-    grid-template-columns: 1fr;
+  .squad-card {
+    min-height: 310px;
   }
 
-  .squad-card {
-    min-height: 112px;
+  .player-portrait {
+    min-height: 190px;
+  }
+
+  .identity h2 {
+    font-size: clamp(3rem, 14vw, 4rem);
   }
 }
